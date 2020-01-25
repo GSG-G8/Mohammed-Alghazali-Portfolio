@@ -182,3 +182,73 @@
 .about-me__info__hobbies__content__text h3 {
   margin-bottom: 20px;
 }
+
+.my-skills {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
+  padding: 60px 0;
+}
+
+.my-skills__skills {
+  flex: 1;
+  padding-right: 25px;
+  line-height: 1.6;
+  padding-top: 25px;
+}
+
+.my-skills__skills h2{
+  margin:0 0 25px 0 ;
+}
+
+.my-skills__skills p{
+  text-align: justify;
+}
+
+
+
+.my-skills__skills button{
+  background: none;
+  border: 3px solid #328cc1;
+  padding: 10px 30px;
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+.my-skills__progress{
+  flex: 1;
+  padding: 25px;
+  padding-left: 25px;
+  padding-top: 25px;
+  display: flex;
+    flex-wrap: wrap;
+}
+
+.my-skills__progress__technique {
+  width: 100%;
+}
+
+.my-skills__progress__technique  h3{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.my-skills__progress__technique  progress{
+  margin-bottom: 10px;
+}
+
+progress {
+  height: 1.5rem;
+  width: 100%;
+}
+
+progress::-webkit-progress-value { background: #328cc1;}
+progress::-webkit-progress-bar {background-color: #fff;}
+
+progress {background-color: #328cc1;}
+progress::-moz-progress-bar {background-color: #000;}
+
+progress {color: #328cc1;}
