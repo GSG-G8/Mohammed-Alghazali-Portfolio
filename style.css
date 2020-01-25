@@ -279,8 +279,22 @@ progress {color: #328cc1;}
 }
 
 
-
 .flex-wrap {
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
+  padding: 85px 0;
+}
+
+.testimonials q {
+  width: 100%;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  font-weight: 400;
+  text-align: center;
 }
