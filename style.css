@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .main-nav {
@@ -11,7 +12,6 @@
   background-color: black;
   align-items: center;
   z-index: 2;
-  height: 8vh;
   color: white;
   font-weight: bold;
 }
@@ -40,6 +40,12 @@
   font-size: 20px;
 }
 
+.main-nav__ul li a {
+  
+  text-decoration: none;
+  color: white;
+}
+
 .main-header {
   height: 92vh;
   display: flex;
@@ -47,10 +53,9 @@
   background-color: black;
 }
 
-
 .main-header__left-section {
   background-color: #328cc1;
-  flex: 3.5;
+  width: 77%;
   transform: skewX(11deg);
   border-radius: 30px;
   display: flex;
@@ -87,13 +92,12 @@
   font-family: "Raleway", Times, serif;
 }
 .main-header__right-section {
-  flex: 1;
+  width: 23%;
   position: relative;
   
 }
 
 .main-header__right-section img {
-  
   margin-left: 10%;
   position: absolute;
   top: 17%;
@@ -102,7 +106,6 @@
   border-radius: 0 14%;
 }
 
-  
 .about-me {
   display: flex;
   justify-content: center;
@@ -113,28 +116,25 @@
 .container {
   display: flex;
   width: 80vw;
-  
 }
 
 .about-me__image {
-  width: 50%;
-  flex: 0.7;
+  width: 40%;
 }
 
 .about-me__image img {
   width: 100%;
-  
+  min-height:100%;
 }
 
 .about-me__info {
-  width: 50%;
-  flex: 1;
+  width: 60%;
   line-height: 1.9;
-  margin-left: 50px;
+  padding-left: 50px;
 }
 
 .about-me__info h2 {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .about-me__info p {
@@ -146,6 +146,7 @@
   margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
+  line-height: 1.5;
 }
 
 .about-me__info__hobbies__content {
@@ -168,12 +169,9 @@
   color: #328cc1;
 }
 
-
-
 .about-me__info__hobbies__content__icon i {
   font-size: 40px;
 }
-
 
 .about-me__info__hobbies__content__text {
   width: 80%;
@@ -205,18 +203,16 @@
   text-align: justify;
 }
 
-
-
-.my-skills__skills button{
+.my-skills__skills a{
   background: none;
   border: 3px solid #328cc1;
   padding: 10px 30px;
   color: #000;
   font-weight: bold;
   margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
 }
-
-
 
 .my-skills__progress{
   flex: 1;
@@ -247,10 +243,8 @@ progress {
 
 progress::-webkit-progress-value { background: #328cc1;}
 progress::-webkit-progress-bar {background-color: #fff;}
-
 progress {background-color: #328cc1;}
 progress::-moz-progress-bar {background-color: #000;}
-
 progress {color: #328cc1;}
 
 .resume {
@@ -279,7 +273,6 @@ progress {color: #328cc1;}
   margin-top: 20px;
 }
 
-
 .flex-wrap {
   flex-wrap: wrap;
   justify-content: center;
@@ -299,16 +292,19 @@ progress {color: #328cc1;}
   text-align: center;
 }
 
-
+.testimonials h3 {
+  border-bottom: 3px solid rgb(50, 140, 193);
+  padding-bottom: 4px;
+}
 
 .portfolio
 {
-    padding-top: 50px;
-    padding-bottom: 70px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background-color: #F2F2F2;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #F2F2F2;
 }
 
 .portfolio h2
@@ -321,30 +317,30 @@ progress {color: #328cc1;}
 
 .portfolio p
 {
-    line-height:1.7;
-    color:#666;
-    margin-bottom:30px;
+  line-height:1.7;
+  color:#666;
+  margin-bottom:30px;
 }
 
 .portfolio .our-work
 {
-    overflow: hidden
+  overflow: hidden
 }
 
 .portfolio .our-work > div
 {
-    float: left;
-    width: 33.33333%;
-    margin-bottom: 10px;
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 10px;
 }
 
 .portfolio .our-work > div img
 {
-    width: 92%;
-    margin: 10px;
-    padding:3px;
-    background-color:#fff;
-    border:1px solid #ccc;
+  width: 92%;
+  margin: 10px;
+  padding:3px;
+  background-color:#fff;
+  border:1px solid #ccc;
 }
 
 .form{
@@ -366,24 +362,21 @@ progress {color: #328cc1;}
   width: 100%;
 }
 
-
-
 .form input {
   margin: 0 auto;
   background: #fff;
-  padding: 10px;
+  padding: 7px;
   width: 100%;
   color: #000;
   font-weight: bold;
   border-radius: 10px;
-  height: 31px;
-  border: none;
+  border: 2px solid rgb(50, 140, 193);
   text-decoration: none;
   margin-top: 10px;
   margin-bottom: 20px;
   display: block;
-
 }
+
 .form textarea{
   margin: 0 auto;
   background: #fff;
@@ -393,11 +386,14 @@ progress {color: #328cc1;}
   font-weight: bold;
   border-radius: 10px;
   height: 150px;
-  border: none;
+  border: 2px solid rgb(50, 140, 193);
   margin-top: 10px;
   display: block;
   margin-bottom: 20px;
+}
 
+textarea:focus, input:focus{
+  outline: none;
 }
 
 footer {
@@ -408,4 +404,112 @@ footer {
   align-items: center;
   background-color: #328cc1;
   font-weight: bold;
+}
+
+@media screen and (max-width:1050px) {
+  .main-header__right-section img{
+    left: -70%;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .main-header__right-section img{
+    left: -90%;
+  }
+}
+
+@media screen and (max-width:720px) {
+  .main-nav__logo {
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .main-nav__ul {
+    flex: 1.7;
+    padding-left: 30px;
+  }
+  .main-nav__ul li a {
+    font-size: 18px;
+  }
+  .main-header__left-section__article span:first-of-type {
+    font-size: 250%;
+  }
+  .main-header__left-section__article span {
+    font-size: 480%;
+  }
+  .main-header__left-section__article span:last-of-type {
+    font-size: 280%;
+  }
+  .main-header__right-section img {
+    height: 50vh;
+    top: 23%;
+  }
+}
+@media screen and (max-width:600px) {
+  .main-nav__logo {
+    padding-left: 20px;
+    font-size: 13px;
+  }
+  .main-nav__logo span {
+    font-size: large;
+  }
+  .main-nav__ul {
+    flex: 1.7;
+    padding-left: 30px;
+  }
+  .main-nav__ul li a {
+    font-size: 16px;
+  }
+  .main-header__left-section__article span:first-of-type {
+    font-size: 150%;
+  }
+  .main-header__left-section__article span {
+    font-size: 350%;
+  }
+  .main-header__left-section__article span:last-of-type {
+    font-size: 160%;
+  }
+  .main-header__right-section img {
+    height: 40vh;
+    top: 23%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .about-me__image {
+    order: 1;
+    width: 60%;
+  }
+  .about-me__info {
+    width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .my-skills__skills{
+    flex: unset;
+    width: 100%;
+    padding-right: 0;
+    text-align: center;
+  }
+  .my-skills__progress{
+    flex: unset;
+    padding: 25px 0;
+    width: 100%;
+  }
+  .my-skills__skills button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-me__info__hobbies__content__text h3 {
+    margin-left: 15px;
+  }
+  .about-me__info p {
+    font-size: 15px;
+  }
 }
